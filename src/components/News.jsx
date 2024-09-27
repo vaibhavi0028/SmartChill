@@ -7,15 +7,27 @@ const NewsSection = () => {
     useEffect(() => {
         const fetchNews = async () => {
             try {
-                const response = await axios.get(`https://newsapi.org/v2/everything`, {
-                    params: {
-                        q: 'AI OR energy efficiency OR sustainable OR chiller systems',
-                        pageSize: 5,
-                        apiKey: '748c06cb42284e3c9574920779353f08'
-                    }
-                });
+                const cachedNews = localStorage.getItem('newsData');
+                
+                if (cachedNews) {
+                    // If data exists in cache, load it from localStorage
+                    setNewsItems(JSON.parse(cachedNews));
+                } else {
+                    // Fetch from API if no cached data
+                    const response = await axios.get(`https://newsapi.org/v2/everything`, {
+                        params: {
+                            q: 'AI OR energy efficiency OR sustainable OR chiller systems',
+                            pageSize: 5,
+                            apiKey: '748c06cb42284e3c9574920779353f08'
+                        }
+                    });
+                    
+                    // Set news items in state
+                    setNewsItems(response.data.articles);
 
-                setNewsItems(response.data.articles);
+                    // Store the fetched data in localStorage
+                    localStorage.setItem('newsData', JSON.stringify(response.data.articles));
+                }
             } catch (error) {
                 console.error('Error fetching news:', error);
             }

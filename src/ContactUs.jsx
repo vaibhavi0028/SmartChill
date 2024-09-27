@@ -81,15 +81,15 @@ const ContactUs = () => {
                     <ul className="mt-12 space-y-6">
                         <li className="flex items-center">
                             <FaPhone  className="mr-4" />
-                            <span className="font-semibold ">Phone:</span> <a href="tel:+1235235598" className="ml-2 text-[#001F3F]">+ 1235 2355 98</a>
+                            <span className="font-semibold ">Phone:</span> <a href="tel:+1235235598" className="ml-2 text-[#001F3F] font-bold">+ 1235 2355 98</a>
                         </li>
                         <li className="flex items-center">
                             <IoMdMail className=" mr-4"/>
-                            <span className="font-semibold ">Email:</span> <a href="mailto:codecortex@gmail.com" className="ml-2 text-[#001F3F]">codecortex@gmail.com</a>
+                            <span className="font-semibold ">Email:</span> <a href="mailto:codecortex@gmail.com" className="ml-2 text-[#001F3F] font-bold">smartchill@gmail.com</a>
                         </li>
                         <li className="flex items-center ">
                             <IoLink className="mr-4"/>
-                            <span className="font-semibold ">Website:</span> <a href="https://codecortex.tam.com/" className="ml-2 text-[#001F3F]">codecortex.com</a>
+                            <span className="font-semibold ">Website:</span> <a href="https://codecortex.tam.com/" className="ml-2 text-[#001F3F] font-bold">smartchill.com</a>
                         </li>
                     </ul>
                     <ul className="flex space-x-4 mt-8 justify-center">
@@ -101,14 +101,14 @@ const ContactUs = () => {
                 <div className="p-8 bg-[#001F3F]">
                     <form onSubmit={handleSubmit}>
                         <h2 className="text-3xl font-bold text-[#6A9DF0]">Send us a message</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                             <div>
                                 <input
                                     type="text"
                                     name="firstName"
                                     value={formData.firstName}
                                     onChange={handleChange}
-                                    className="w-full p-4 border-2 border-gray-300 rounded-lg"
+                                    className="w-full p-[10px] border-2 border-gray-300 rounded-lg"
                                     placeholder="First Name"
                                 />
                             </div>
@@ -118,7 +118,7 @@ const ContactUs = () => {
                                     name="lastName"
                                     value={formData.lastName}
                                     onChange={handleChange}
-                                    className="w-full p-4 border-2 border-gray-300 rounded-lg"
+                                    className="w-full p-[10px] border-2 border-gray-300 rounded-lg"
                                     placeholder="Last Name"
                                 />
                             </div>
@@ -128,7 +128,7 @@ const ContactUs = () => {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full p-4 border-2 border-gray-300 rounded-lg"
+                                    className="w-full p-[10px] border-2 border-gray-300 rounded-lg"
                                     placeholder="Mail"
                                 />
                             </div>
@@ -138,7 +138,7 @@ const ContactUs = () => {
                                     name="phone"
                                     value={formData.phone}
                                     onChange={handleChange}
-                                    className="w-full p-4 border-2 border-gray-300 rounded-lg"
+                                    className="w-full p-[10px] border-2 border-gray-300 rounded-lg"
                                     placeholder="Phone"
                                 />
                             </div>
@@ -147,12 +147,13 @@ const ContactUs = () => {
                                     name="message"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    className="w-full p-4 border-2 border-gray-300 rounded-lg"
+                                    className="w-full p-[10px] border-2 border-gray-300 rounded-lg"
                                     placeholder="Write your message"
+                                    rows="4"
                                 />
                             </div>
                         </div>
-                        <button type="submit" className="w-full md:w-auto bg-[#6A9DF0] text-[#001F3F] py-3 px-6 mt-6 rounded-lg hover:bg-[#98DED9] transition">
+                        <button type="submit" className="w-full md:w-auto bg-[#6A9DF0] text-[#001F3F] py-3 px-6 mt-6 font-bold rounded-lg hover:bg-[#98DED9] transition">
                             Send Message
                         </button>
                     </form>

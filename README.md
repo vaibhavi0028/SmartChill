@@ -154,6 +154,6 @@ This project illustrates the use of AI and real-time data monitoring in optimizi
 
 ## :handshake: Team - ByteBond
 Vaibhavi - 22MIC0046 <br>
-Pulkit - 22BC <br>
+Pulkit - 22BCE3424 <br>
 Maneet Gupta - 24BBS0101 <br>
 Prince Kosthi - 24BBS0004 <br>

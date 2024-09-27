@@ -21,7 +21,7 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 	{
 		key: 'faq',
 		label: 'FAQ',
-		path: '/FAQ',
+		path: '/faq',
 		icon: <HiOutlineCube />
 	},
 	{

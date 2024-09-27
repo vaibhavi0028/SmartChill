@@ -7,6 +7,7 @@ import Spline from '@splinetool/react-spline';
 import myScene1 from '../assets/rma.spline';
 import myScene2 from '../assets/machine.spline';
 import Imagew1 from '../assets/w1.png';
+import Imagew2 from '../assets/pipe.png';
 
 const DivSlider = () => {
   return (
@@ -16,13 +17,9 @@ const DivSlider = () => {
 
         <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 pt-4 rounded-tl-3xl rounded-bl-3xl">
           <div className="mx-auto">
-          {/* <Spline className="h-[550px]" scene={myScene1} /> */}
-          <div
-            className="h-[550px]"
-            style={{
-              backgroundImage: `url(${Imagew1})`,
-            }}
-          ></div>
+          
+          <img src={Imagew1}/>
+          
           </div>
 
           <h2 className="text-white text-xl font-semibold mt-8">
@@ -114,8 +111,8 @@ const DivSlider = () => {
         </section>
 
         <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 rounded-tr-3xl rounded-br-3xl ml-5">
-          <div className="mx-auto mb-20">
-          <Spline className="h-[550px]" scene={myScene2} />
+          <div className="mx-auto mb-8">
+          <img src={Imagew2}/>
           </div>
           <h2 className="text-white text-xl font-semibold">
             Fault Detection and Prediction

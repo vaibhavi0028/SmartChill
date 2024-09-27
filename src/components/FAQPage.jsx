@@ -64,7 +64,7 @@ const FAQPage = () => {
     return (
         <div className="max-w-full mx-auto p-0 box-border bg-[#001F3F] rounded-tl-3xl rounded-tr-3xl">
             <div className="bg-[#6A9DF0] text-white py-10 px-20 mb-10 text-center relative flex flex-col items-start rounded-tl-3xl rounded-tr-3xl">
-                <p className="mb-2 text-left text-lg" id="support">Customer Support</p>
+                <p className="mb-2 text-left text-[#001F3F] text-lg font-[600]" id="support">Customer Support</p>
                 <h1 className="text-5xl mb-6 text-left">Top questions about <span id="title" className="text-[#001F3F] font-bold">SmartChill!</span></h1>
             </div>
 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
 import Image1 from '../assets/O3.jpg';
 import Image2 from '../assets/H1.jpg';
-import Image3 from '../assets/O4.jpg';
+import Image3 from '../assets/pipe.jpg';
 
 const Card = ({ number, title, content, image, hoverImage, link }) => {
     const cardRef = useRef(null);

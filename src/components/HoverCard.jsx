@@ -101,7 +101,7 @@ const HoverCard = () => {
                             <img 
                                 src={modalCard.photo}
                                 alt={modalCard.name}
-                                className="w-full h-96 object-cover rounded-lg mb-6"
+                                className="w-full h-96 object-contain rounded-lg mb-6"
                             />
                             <h3 className="text-3xl font-bold text-[#001F3F]">{modalCard.name}</h3>
                             <p className="text-xl text-gray-600 mb-4">{modalCard.designation}</p>

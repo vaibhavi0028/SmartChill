@@ -3,7 +3,9 @@ import Image1 from "../assets/machine.jpg";
 import Image2 from "../assets/w2a.r.png";
 import Image3 from "../assets/w2b.r.png";
 import Image4 from "../assets/machine2.jpg";
-import Spline from "@splinetool/react-spline";
+import Spline from '@splinetool/react-spline';
+import myScene1 from '../assets/rma.spline';
+import myScene2 from '../assets/machine.spline';
 
 const DivSlider = () => {
   return (
@@ -12,17 +14,11 @@ const DivSlider = () => {
       <div className="w-[90%] h-[100vh] sticky top-20 rounded-tl-3xl rounded-tr-3xl bg-white mx-auto flex">
 
         <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 pt-4 rounded-tl-3xl rounded-bl-3xl">
-          <div className="mx-auto mb-4">
-            <iframe
-              src="https://my.spline.design/particles-5f22f4dea11bd133bd1a982447684717/"
-              frameborder="0"
-              width="100%"
-              height="160%"
-              allowFullScreen
-            ></iframe>
+          <div className="mx-auto">
+          <Spline className="h-[550px]" scene={myScene1} />
           </div>
 
-          <h2 className="text-white text-xl font-semibold mt-20">
+          <h2 className="text-white text-xl font-semibold mt-8">
             AI Chiller Plant Optimizer
           </h2>
           <p className="text-white mt-4">
@@ -112,13 +108,7 @@ const DivSlider = () => {
 
         <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 rounded-tr-3xl rounded-br-3xl ml-5">
           <div className="mx-auto mb-20">
-            <iframe
-              src="https://my.spline.design/ai-60a38404a0f2fca32ca19ac8abf9de0e/"
-              frameborder="0"
-              width="100%"
-              height="160%"
-              allowFullScreen
-            ></iframe>
+          <Spline className="h-[550px]" scene={myScene2} />
           </div>
           <h2 className="text-white text-xl font-semibold">
             Fault Detection and Prediction

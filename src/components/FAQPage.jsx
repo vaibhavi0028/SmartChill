@@ -1,5 +1,6 @@
 import React, { useState } from 'react'; 
 import Spline from '@splinetool/react-spline';
+import myScene from '../assets/chips.spline';
 
 const FAQPage = () => {
     const GeneralFAQ = [
@@ -86,7 +87,7 @@ const FAQPage = () => {
         <div className="max-w-full mx-auto p-0 box-border bg-[#001F3F] rounded-tl-3xl rounded-tr-3xl">
             <div className="bg-[#6A9DF0] text-white py-10 px-20 mb-10 text-center relative flex flex-col items-start rounded-tl-3xl rounded-tr-3xl">
                 <p className="mb-2 text-left text-lg" id="support">Customer Support</p>
-                <h1 className="text-5xl mb-6 text-left">Top questions about <span id="title" className="text-[#001F3F]">SmartChill!</span></h1>
+                <h1 className="text-5xl mb-6 text-left">Top questions about <span id="title" className="text-[#001F3F] font-bold">SmartChill!</span></h1>
                 
             </div>
 
@@ -96,7 +97,7 @@ const FAQPage = () => {
                     <p className="text-xl mb-5 text-gray-400">
                         Everything you need to know about SmartChill and how it works. Can't find an answer? Please chat with our friendly team.
                     </p>
-                    <Spline className="rounded-3xl h-[550px]" scene="https://prod.spline.design/VZ-YgkuVkiTqyot6/scene.splinecode" />
+                    <Spline className="rounded-3xl h-[550px]" scene={myScene} />
                 </div>
                 <div className="w-3/5 px-28 flex flex-col min-h-[30%]">
                     {genFAQ.map((q) => (

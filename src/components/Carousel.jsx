@@ -7,33 +7,26 @@ const Carousel = () => {
     const fadeIn = "transition-opacity duration-700 opacity-0";
     console.log(Img1)
     const [items, setItems] = useState([
-        
         {
             backgroundImage: "https://i.pinimg.com/originals/e5/f9/d5/e5f9d5265ccb6969696f69663091ca15.gif",
-            name: "Medical Image Synthesizer",
-            description: "AI systems that generate synthetic medical images (e.g., X-rays, MRIs) to augment datasets for research and training, addressing privacy issues in real medical data.",
+            name: "SmartChill AI Diagnostics",
+            description: "Smart AI-driven diagnostics to monitor and optimize HVAC systems, ensuring energy-efficient cooling and real-time issue detection.",
         },
         {
             backgroundImage: "https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif",
-            name: "Deep-Fake Img Recognition",
-            description: "Deepfake image recognition uses a CNN to distinguish real from manipulated images, training on a dataset to detect subtle artifacts.",
+            name: "Energy Efficiency Tracking",
+            description: "Track the energy consumption of your chiller systems in real-time, with suggestions to optimize efficiency and reduce energy waste.",
         },
         {
             backgroundImage: "https://i.pinimg.com/originals/29/24/62/2924624b72ad602afebc66b4cb862a11.gif",
-            name: "Medical Prescription Analyzer",
-            description: "A medical prescription analyzer leverages machine learning to extract medication names and dosages from prescriptions, improving accuracy and reducing errors in patient care.",
+            name: "Predictive Maintenance",
+            description: "Use AI to predict maintenance needs, reducing downtime and improving the longevity of HVAC systems by preventing issues before they arise.",
         },
         {
             backgroundImage: "https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif",
-            name: "Deep-Fake Img Recognition",
-            description: "Deepfake image recognition uses a CNN to distinguish real from manipulated images, training on a dataset to detect subtle artifacts.",
+            name: "Remote System Control",
+            description: "Control and monitor your cooling systems remotely with our SmartChill platform, offering flexibility and improved operational control.",
         },
-        {
-            backgroundImage: "https://i.pinimg.com/originals/29/24/62/2924624b72ad602afebc66b4cb862a11.gif",
-            name: "Medical Prescription Analyzer",
-            description: "A medical prescription analyzer leverages machine learning to extract medication names and dosages from prescriptions, improving accuracy and reducing errors in patient care.",
-        },
-        
     ]);
 
     useEffect(() => {
@@ -57,7 +50,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="relative w-full h-[550px] mr-80">
+        <div className="relative w-full h-[550px] mr-80 overflow-x-hidden">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1000px] h-full">
                 <div className="relative w-full h-full">
                     {items.map((item, index) => (

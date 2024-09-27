@@ -6,6 +6,7 @@ import Image4 from "../assets/machine2.jpg";
 import Spline from '@splinetool/react-spline';
 import myScene1 from '../assets/rma.spline';
 import myScene2 from '../assets/machine.spline';
+import Imagew1 from '../assets/w1.png';
 
 const DivSlider = () => {
   return (
@@ -15,7 +16,13 @@ const DivSlider = () => {
 
         <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 pt-4 rounded-tl-3xl rounded-bl-3xl">
           <div className="mx-auto">
-          <Spline className="h-[550px]" scene={myScene1} />
+          {/* <Spline className="h-[550px]" scene={myScene1} /> */}
+          <div
+            className="h-[550px]"
+            style={{
+              backgroundImage: `url(${Imagew1})`,
+            }}
+          ></div>
           </div>
 
           <h2 className="text-white text-xl font-semibold mt-8">

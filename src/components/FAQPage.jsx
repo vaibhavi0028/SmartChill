@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; 
 import Spline from '@splinetool/react-spline';
-import myScene from '../assets/chips.spline';
+import myScene from '../assets/faq.spline';
 
 const FAQPage = () => {
     const GeneralFAQ = [
@@ -97,7 +97,8 @@ const FAQPage = () => {
                     <p className="text-xl mb-5 text-gray-400">
                         Everything you need to know about SmartChill and how it works. Can't find an answer? Please chat with our friendly team.
                     </p>
-                    <Spline className="rounded-3xl h-[550px]" scene={myScene} />
+                    <Spline className="h-[300px]" scene={myScene} />
+                    
                 </div>
                 <div className="w-3/5 px-28 flex flex-col min-h-[30%]">
                     {genFAQ.map((q) => (

@@ -2,7 +2,6 @@ import React from 'react'
 import classNames from 'classnames'
 import { Link, useLocation } from 'react-router-dom'
 import { FcBullish } from 'react-icons/fc'
-import { HiOutlineLogout } from 'react-icons/hi'
 import { DASHBOARD_SIDEBAR_LINKS, DASHBOARD_SIDEBAR_BOTTOM_LINKS } from '../../lib/constants'
 
 const linkClass =
@@ -21,17 +20,6 @@ export default function Sidebar() {
 					<SidebarLink key={link.key} link={link} />
 				))}
 			</div>
-			{/* <div className="flex flex-col gap-0.5 pt-2 border-t border-neutral-700">
-				{DASHBOARD_SIDEBAR_BOTTOM_LINKS.map((link) => (
-					<SidebarLink key={link.key} link={link} />
-				))}
-				<div className={classNames(linkClass, 'cursor-pointer text-red-500')}>
-					<span className="text-xl">
-						<HiOutlineLogout />
-					</span>
-					Logout
-				</div>
-			</div> */}
 		</div>
 	)
 }

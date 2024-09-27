@@ -41,7 +41,6 @@ const HoverCard = () => {
                     Our Team
                 </h2>
 
-                {/* Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {cards.map((card, index) => (
                         <div
@@ -82,7 +81,6 @@ const HoverCard = () => {
                     ))}
                 </div>
                 
-                {/* Bottom line */}
                 <div className="flex justify-center mt-16">
                     <div className="w-24 h-1 bg-[#001F3F] rounded-full"></div>
                 </div>

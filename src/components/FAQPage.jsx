@@ -6,68 +6,67 @@ const FAQPage = () => {
         {
             id: 1,
             toggle: false,
-            question: 'What is a medical prescription analyzer?',
+            question: 'What is SmartChill? ',
             answer:
-                'A medical prescription analyzer is a tool that uses machine learning to extract and interpret data from prescriptions..',
+                'SmartChill is an AI-driven solution designed to optimize the efficiency of chiller plants through real-time data analysis and machine learning.',
         },
         {
             id: 2,
             toggle: false,
-            question: "What is deepfake image recognition?",
+            question: "How does SmartChill optimize chiller plant operations?",
             answer:
-                'Deepfake image recognition is a technology that detects manipulated images and distinguishes them from authentic ones using machine learning algorithms.',
+                'SmartChill employs machine learning algorithms to predict and adjust key operational variables, such as temperature and flow rates, to enhance energy efficiency and operational performance.',
         },
         {
             id: 3,
             toggle: false,
             question:
-                "What is a medical image synthesizer?",
+                "What technology does SmartChill use for fault detection?",
             answer:
-                'A medical image synthesizer is a tool that generates synthetic medical images using machine learning techniques, typically through a Generative Adversarial Network (GAN).',
+                'SmartChill utilizes real-time sensor data and convolutional neural networks (CNNs) to identify potential faults and predict maintenance needs, ensuring continuous operation.',
         },
         {
             id: 4,
             toggle: false,
             question:
-                "What are the applications of synthetic medical images?",
+                "What are the benefits of using SmartChill?",
             answer:
-                'Synthetic images can be used for training machine learning models, augmenting datasets, and improving diagnostic accuracy in medical imaging.',
+                'Using SmartChill leads to reduced energy consumption, increased operational efficiency, and minimized downtime through predictive maintenance and optimization strategies.',
         },
         {
             id: 5,
             toggle: false,
-            question: "How does the prescription analyzer improve patient care?",
+            question: "Can SmartChill be integrated with existing systems?",
             answer:
-                'By enhancing accuracy in medication management, it helps reduce errors in patient care, ensuring safer medication practices.',
+                'Yes, SmartChill is designed for seamless integration with existing chiller plant systems, allowing for easy implementation without disrupting current operations.',
         },
         {
             id: 6,
             toggle: false,
-            question: 'How does deepfake detection work?',
+            question: 'How can I get started with SmartChill?',
             answer:
-                'It employs a convolutional neural network (CNN) to extract features from images and classify them as real or fake.',
+                'To get started with SmartChill, contact our team for a consultation. We will assess your needs and provide a tailored implementation plan.',
+        },
+        {
+            id: 7,
+            toggle: false,
+            question: 'What kind of support does SmartChill offer?',
+            answer:
+                'SmartChill provides comprehensive support, including technical assistance, regular system updates, and user training to ensure that your team can effectively utilize the platform and achieve optimal results.',
+        },
+        {
+            id: 8,
+            toggle: false,
+            question: "What industries can benefit from using SmartChill?",
+            answer:
+                'SmartChill is suitable for various industries, including commercial buildings, manufacturing facilities, and data centers, where efficient cooling is essential for operational performance.',
         },
     ];
 
-    const FAQ2 = [
-        {
-            id: 1,
-            toggle: false,
-            question: 'How long can I use the service for free?',
-            answer:
-                'You can use the service for free for 1 month.',
-        },
-        {
-            id: 2,
-            toggle: false,
-            question: ' What payment methods do you accept?',
-            answer:
-                'We accept various payment methods, including credit cards and PayPal.',
-        },
-    ];
+    
 
     const [genFAQ, setGenFAQ] = useState(GeneralFAQ);
-    const [Faq2, setFaq2] = useState(FAQ2);
+    
     const handleToggle = (id) => {
         setGenFAQ((prevFaqs) =>
             prevFaqs.map((faq) =>
@@ -80,38 +79,24 @@ const FAQPage = () => {
             )
         );
     };
-    const handleToggle2 = (id) => {
-        setFaq2((prevFaqs2) =>
-            prevFaqs2.map((faq) =>
-                faq.id === id
-                    ? {
-                            ...faq,
-                            toggle: !faq.toggle,
-                      }
-                    : faq
-            )
-        );
-    };
+    
+    
 
     return (
         <div className="max-w-full mx-auto p-0 box-border bg-[#001F3F] rounded-tl-3xl rounded-tr-3xl">
             <div className="bg-[#6A9DF0] text-white py-10 px-20 mb-10 text-center relative flex flex-col items-start rounded-tl-3xl rounded-tr-3xl">
                 <p className="mb-2 text-left text-lg" id="support">Customer Support</p>
-                <h1 className="text-5xl mb-6 text-left">Top questions about <span id="title" className="text-[#001F3F]">Us!</span></h1>
-                {/* <input className="w-full max-w-xs p-2 border border-black text-white rounded bg-transparent text-xl mt-5" type="text" placeholder="Search" /> */}
-                {/* <p className="absolute right-40 top-1/2 transform -translate-y-1/2 text-right text-xl max-w-xl">
-                    Save 100s of man hours monitoring and detect crucial events. 
-                    <br /> Detect events. Every day. Automatically.
-                </p> */}
+                <h1 className="text-5xl mb-6 text-left">Top questions about <span id="title" className="text-[#001F3F]">SmartChill!</span></h1>
+                
             </div>
 
             <div className="mb-10 px-8 flex items-start min-h-full py-12">
                 <div className="w-2/5 p-2 text-center">
                     <h2 className="text-3xl mb-2 text-white">General FAQs</h2>
                     <p className="text-xl mb-5 text-gray-400">
-                        Everything you need to know about the product and how it works. Can't find an answer? Please chat to our friendly team.
+                        Everything you need to know about SmartChill and how it works. Can't find an answer? Please chat with our friendly team.
                     </p>
-                    <Spline className="rounded-3xl h-[550px]" scene="https://prod.spline.design/OBVLAn96eBOxt-5J/scene.splinecode" />
+                    <Spline className="rounded-3xl h-[550px]" scene="https://prod.spline.design/VZ-YgkuVkiTqyot6/scene.splinecode" />
                 </div>
                 <div className="w-3/5 px-28 flex flex-col min-h-[30%]">
                     {genFAQ.map((q) => (
@@ -128,27 +113,6 @@ const FAQPage = () => {
                 </div>
             </div>
 
-            <div className="mb-10 px-8 flex items-start min-h-full py-12">
-                <div className="w-2/5 p-2 text-center">
-                    <h2 className="text-3xl mb-2 text-white">Billing FAQs</h2>
-                    <p className="text-xl mb-5 text-gray-400">
-                        Everything you need to know about the billing and invoices. Can't find an answer? Please chat to our friendly team.
-                    </p>
-                </div>
-                <div className="w-3/5 px-28 flex flex-col min-h-[30%]">
-                    {Faq2.map((q) => (
-                        <div className="border-b border-gray-300 py-2 w-full flex flex-col justify-center" key={q.id}>
-                            <div className="flex justify-between items-center">
-                                <h3 className="text-xl text-white">{q.question}</h3>
-                                <span className="text-2xl cursor-pointer pl-2 text-green-500" onClick={() => handleToggle2(q.id)}>
-                                    {q.toggle ? '-' : '+'}
-                                </span>
-                            </div>
-                            {q.toggle && <p className="text-lg mt-2 text-gray-300">{q.answer}</p>}
-                        </div>
-                    ))}
-                </div>
-            </div>
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-function HeroSection() {
+function HeroSection({ onButtonClick }) {
   return (
     <div className="bg-[#6A9DF0] p-20 h-60 w-29  flex items-center justify-start rounded-2xl hover:scale-105 transition ease-in-out duration-300 hover:bg-[#6A9AC0]">
 
@@ -9,9 +9,9 @@ function HeroSection() {
         <div className="ml-8">
           <h1 className="text-5xl font-bold text-[#001F3F]">Estimate the chiller plant load</h1>
 
-          <p className="text-xl text-black mt-4 text-[#001F3F]">The world's leading AI-powered developer platform.</p>
+          <p className="text-xl text-black mt-4 text-[#001F3F]">AI-powered solution for precise load prediction, pump optimizer and fault detection.</p>
           <p className="text-xl text-black mt-4 text-[#001F3F]">
-          <p>To access the Models!<span className=" ml-2 bg-[#001F3F] text-white rounded-2xl p-3 text-sm">Hover the card's below </span></p>
+          <p>Optimize energy consumption and enhance efficiency!<button className=" ml-2 bg-[#001F3F] text-white rounded-2xl p-3 text-sm" onClick={onButtonClick}>Let's start</button></p>
           
           </p>
         </div>
@@ -20,25 +20,10 @@ function HeroSection() {
   );
 }
 
-export default function DashboardStatsGrid() {
+export default function DashboardStatsGrid({ onButtonClick }) {
   return (
     <>
-      <HeroSection />
-
-      {/* Placeholder for the stats grid */}
-      {/* <div className="flex gap-4">
-        <BuyerProfilePieChart dataSets={[dataSet1]} />
-        <BuyerProfilePieChart dataSets={[dataSet2]} />
-        <BuyerProfilePieChart dataSets={[dataSet3]} />
-      </div> */}
+      <HeroSection onButtonClick={onButtonClick}/>
     </>
   );
 }
-
-// function BoxWrapper({ children }) {
-//   return (
-//     <div className="bg-white rounded-sm p-4 flex-1 border border-gray-200 flex items-center h-30 w-1">
-//       {children}
-//     </div>
-//   );
-// }

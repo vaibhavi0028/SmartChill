@@ -1,25 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import DashboardStatsGrid from '../components/DashboardStatsGrid'
-import BuyerProfilePieChart from '../components/BuyerProfilePieChart'
-import PopularProducts from '../components/PopularProducts'
-import DivSlider from '../components/DivSlider'
 import Cards from '../components/Cards'
-import Carousel from '../components/Carousel'
 
 export default function Dashboard() {
+	const cardsRef = useRef(null);
+
+    const scrollToCards = () => {
+        if (cardsRef.current) {
+            cardsRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 	return (
 		<div className="flex flex-col gap-4">
-			<DashboardStatsGrid />
-			<div className="flex flex-row gap-4 w-full">
-				{/* <TransactionChart /> */}
+			<DashboardStatsGrid onButtonClick={scrollToCards}  />
+			<div className="flex flex-row gap-4 w-full" ref={cardsRef}>
 				<Cards />
-				{/* <BuyerProfilePieChart /> */}
 			</div>
 			<div className="flex flex-row gap-4 w-full">
-				{/* <RecentOrders /> */}
-				{/* <Carousel /> */}
-				{/* <DivSlider /> */}
-				{/* <PopularProducts /> */}
 			</div>
 		</div>
 	)

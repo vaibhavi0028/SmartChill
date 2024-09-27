@@ -7,11 +7,7 @@ const Carousel = () => {
     const fadeIn = "transition-opacity duration-700 opacity-0";
     console.log(Img1)
     const [items, setItems] = useState([
-        {
-            backgroundImage: Img1,
-            // name: "Switzerland",
-            // description: "X-Dev, Transforming code into visual poetry..!",
-        },
+        
         {
             backgroundImage: "https://i.pinimg.com/originals/e5/f9/d5/e5f9d5265ccb6969696f69663091ca15.gif",
             name: "Medical Image Synthesizer",
@@ -27,16 +23,17 @@ const Carousel = () => {
             name: "Medical Prescription Analyzer",
             description: "A medical prescription analyzer leverages machine learning to extract medication names and dosages from prescriptions, improving accuracy and reducing errors in patient care.",
         },
-        // {
-        //     backgroundImage: "https://i.ibb.co/jTQfmTq/img5.jpg",
-        //     name: "Netherlands",
-        //     description: "X-Dev, Transforming code into visual poetry..!",
-        // },
-        // {
-        //     backgroundImage: "https://i.ibb.co/RNkk6L0/img6.jpg",
-        //     name: "Ireland",
-        //     description: "X-Dev, Transforming code into visual poetry..!",
-        // },
+        {
+            backgroundImage: "https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif",
+            name: "Deep-Fake Img Recognition",
+            description: "Deepfake image recognition uses a CNN to distinguish real from manipulated images, training on a dataset to detect subtle artifacts.",
+        },
+        {
+            backgroundImage: "https://i.pinimg.com/originals/29/24/62/2924624b72ad602afebc66b4cb862a11.gif",
+            name: "Medical Prescription Analyzer",
+            description: "A medical prescription analyzer leverages machine learning to extract medication names and dosages from prescriptions, improving accuracy and reducing errors in patient care.",
+        },
+        
     ]);
 
     useEffect(() => {
@@ -78,17 +75,15 @@ const Carousel = () => {
                                 }`}
                             style={{ backgroundImage: `url(${item.backgroundImage})` }}
                         >
-                            {/* Show details only for the enlarged card (index === 0) */}
+                            
                             {index === 0 && (
                                 <div
                                     className={`w-[400px] pl-[20px] h-full flex flex-col items-center justify-center text-center text-white ${fadeIn} animate-fadeIn opacity-100`}
-                                    style={{ opacity: 1 }} // Set to 1 for visibility
+                                    style={{ opacity: 1 }} 
                                 >
                                     <h2 className="text-4xl font-bold uppercase">{item.name}</h2>
                                     <p className="mt-2 mb-5 animation-delay-300">{item.description}</p>
-                                    {/* <button className="px-5 py-2.5 w-32 bg-white text-black animation-delay-600">
-                                        See More
-                                    </button> */}
+                                    
                                 </div>
                             )}
                         </div>

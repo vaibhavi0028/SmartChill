@@ -9,7 +9,7 @@ const NewsSection = () => {
             try {
                 const response = await axios.get(`https://newsapi.org/v2/everything`, {
                     params: {
-                        q: 'health OR healthcare OR medicine OR wellness OR disease',
+                        q: 'AI OR energy efficiency OR sustainable OR chiller systems',
                         pageSize: 5,
                         apiKey: '748c06cb42284e3c9574920779353f08'
                     }
@@ -27,7 +27,7 @@ const NewsSection = () => {
     return (
         <div className="p-8 bg-black">
             <h1 className="text-4xl mb-8 text-center text-[#6A9DF0] uppercase tracking-wide relative animate-bubbleUp">
-                <span>Latest Health </span> & News
+                <span>Latest </span> News
                 <span className="block w-24 h-1 bg-blue-500 mx-auto mt-4"></span>
             </h1>
             <div className="flex flex-wrap gap-8 justify-center">

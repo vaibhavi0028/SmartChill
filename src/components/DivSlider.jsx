@@ -13,11 +13,7 @@ const DivSlider = React.forwardRef(({ scrollToChiller, scrollToFault }, { chille
 
       <div className="w-[90%] h-[100vh] sticky top-20 rounded-tl-3xl rounded-tr-3xl bg-white mx-auto flex">
 
-<<<<<<< HEAD
-        <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 pt-4 rounded-tl-3xl rounded-bl-3xl ">
-=======
         <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 pt-4 rounded-tl-3xl rounded-bl-3xl" id="chiller-info">
->>>>>>> 7a669460c012831efdf11eb590a8134db7992f31
           <div className="mx-auto">
           
           <img src={Imagew1} />
@@ -47,7 +43,7 @@ const DivSlider = React.forwardRef(({ scrollToChiller, scrollToFault }, { chille
             style={{
               backgroundImage: `url(${Image1})`,
               width: "684px",
-              height: "656px",
+              height: "690px",
             }}
           >
 
@@ -106,7 +102,7 @@ const DivSlider = React.forwardRef(({ scrollToChiller, scrollToFault }, { chille
             style={{
               backgroundImage: `url(${Image4})`,
               width: "648px",
-              height: "695px",
+              height: "729px",
             }}
           >
           </div>

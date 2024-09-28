@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Footer from "./components/Footer";
 import DivSlider from "./components/DivSlider";
-import Register from '../src/pages/Register';
-import Dashboard from '../src/pages/Dashboard';
-import Products from '../src/pages/Product';
+import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
+import Products from './pages/Product';
 import Layout from "./components/shared/Layout";
 import Orders from "./components/Orders";
 import Customer from "./components/Customer";
@@ -14,12 +14,26 @@ import DeepFake from "./components/DeepFake";
 
 function App() {
   const location = useLocation();
+  const chillerRef = useRef(null);
+  const faultRef = useRef(null);
+
+  const scrollToChiller = () => {
+    if (chillerRef.current) {
+      chillerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToFault = () => {
+    if (faultRef.current) {
+      faultRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
+          <Route index element={<Dashboard scrollToChiller={scrollToChiller} scrollToFault={scrollToFault} />} />
           <Route path="/faq" element={<Products />} />
           <Route path="/team" element={<Orders />} />
           <Route path="/overview" element={<Customer />} />
@@ -29,7 +43,8 @@ function App() {
         </Route>
         <Route path="/register" element={<Register />} />
       </Routes>
-      {location.pathname === "/" && <DivSlider />}
+
+      {location.pathname === "/" && <DivSlider ref={{ chillerRef, faultRef }} />}
 
       <Footer />
     </>

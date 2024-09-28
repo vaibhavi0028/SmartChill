@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion'; // Import framer-motion
+import { motion } from 'framer-motion'; 
 import Spline from '@splinetool/react-spline';
 import myScene from '../assets/faq.spline';
 
@@ -68,7 +68,7 @@ const FAQPage = () => {
                 <h1 className="text-5xl mb-6 text-left">Top questions about <span id="title" className="text-[#001F3F] font-bold">SmartChill!</span></h1>
             </div>
 
-            <div className="mb-10 px-8 flex items-start min-h-full py-12">
+            <div className="mb-2 px-8 flex items-start min-h-full py-12">
                 <div className="w-2/5 p-2 text-center">
                     <h2 className="text-3xl mb-2 text-white">General FAQs</h2>
                     <p className="text-xl mb-5 text-gray-400">

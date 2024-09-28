@@ -93,9 +93,9 @@ const ContactUs = () => {
                         </li>
                     </ul>
                     <ul className="flex space-x-4 mt-8 justify-center">
-                        <li><a href="https://www.linkedin.com/in/pulkitnandwana/" className="text-black"><FaLinkedin className="fab fa-facebook text-[#001F3F] text-2xl hover:text-[#0A2F3F]"/></a></li>
-                        <li><a href="https://github.com/pulkit131" className="text-black"><FaGithub className="fab fa-twitter text-2xl text-[#001F3F]"/></a></li>
-                        <li><a href="https://www.instagram.com/ieeecs_vit/" className="text-black"><RiInstagramFill className="fab fa-linkedin-in text-2xl text-[#001F3F]"/></a></li>
+                        <li><a href="https://www.linkedin.com/in/pulkitnandwana/" className="text-black"><FaLinkedin className="fab fa-facebook text-[#001F3F] text-2xl hover:text-[#001F8F]"/></a></li>
+                        <li><a href="https://github.com/pulkit131" className="text-black"><FaGithub className="fab fa-twitter text-2xl text-[#001F3F] hover:text-[#001F8F]"/></a></li>
+                        <li><a href="https://www.instagram.com/ieeecs_vit/" className="text-black"><RiInstagramFill className="fab fa-linkedin-in text-2xl text-[#001F3F] hover:text-[#001F8F]"/></a></li>
                     </ul>
                 </div>
                 <div className="p-8 bg-[#001F3F]">

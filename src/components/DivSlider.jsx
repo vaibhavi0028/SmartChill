@@ -3,22 +3,24 @@ import Image1 from "../assets/machine.jpg";
 import Image2 from "../assets/w2a.r.png";
 import Image3 from "../assets/w2b.r.png";
 import Image4 from "../assets/machine2.jpg";
-import Spline from '@splinetool/react-spline';
-import myScene1 from '../assets/rma.spline';
-import myScene2 from '../assets/machine.spline';
 import Imagew1 from '../assets/w1.png';
 import Imagew2 from '../assets/pipe.png';
 
-const DivSlider = () => {
+const DivSlider = React.forwardRef(({ scrollToChiller, scrollToFault }, { chillerRef, faultRef }) => {
+
   return (
-    <div className="w-full h-full py-[10%] bg-[#6A9DF0]">
+    <div className="w-full h-full py-[10%] bg-[#6A9DF0]" id="chiller-info" ref={chillerRef}>
 
       <div className="w-[90%] h-[100vh] sticky top-20 rounded-tl-3xl rounded-tr-3xl bg-white mx-auto flex">
 
+<<<<<<< HEAD
         <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 pt-4 rounded-tl-3xl rounded-bl-3xl ">
+=======
+        <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 pt-4 rounded-tl-3xl rounded-bl-3xl" id="chiller-info">
+>>>>>>> 7a669460c012831efdf11eb590a8134db7992f31
           <div className="mx-auto">
           
-          <img src={Imagew1}/>
+          <img src={Imagew1} />
           
           </div>
 
@@ -96,7 +98,7 @@ const DivSlider = () => {
         </div>
       </div>
 
-      <div className="w-[90%] h-[100vh] sticky top-20 rounded-tl-3xl rounded-tr-3xl bg-black mx-auto flex">
+      <div className="w-[90%] h-[100vh] sticky top-20 rounded-tl-3xl rounded-tr-3xl bg-black mx-auto flex"id="fault-info" ref={faultRef}>
 
         <section className="flex justify-center items-center h-screen">
           <div
@@ -110,11 +112,11 @@ const DivSlider = () => {
           </div>
         </section>
 
-        <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 rounded-tr-3xl rounded-br-3xl ml-5">
+        <div className="w-1/2 bg-black flex flex-col justify-center items-center text-center p-10 rounded-tr-3xl rounded-br-3xl ml-5" id="fault-info">
           <div className="mx-auto mb-8">
           <img src={Imagew2}/>
           </div>
-          <h2 className="text-white text-xl font-semibold">
+          <h2 className="text-white text-xl font-semibold"> 
             Fault Detection and Prediction
           </h2>
           <p className="text-white">
@@ -131,6 +133,6 @@ const DivSlider = () => {
       </div>
     </div>
   );
-};
+});
 
 export default DivSlider;

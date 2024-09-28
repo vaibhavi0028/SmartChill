@@ -3,7 +3,7 @@
 <h1>SmartChill: Optimized Chiller Load Management for Hotels</h1>
 <p>This repository contains the codebase for SmartChill, an innovative project focused on enhancing energy efficiency in hotel chiller plants. Developed by a dedicated team, we leverage data-driven insights to create an AI-driven solution that optimizes chiller performance. Join us in revolutionizing energy management in the hospitality industry! 🚀🏨</p>
 
-<h4> <a href="https://yourwebsite.com">View Website</a> <span> ·  <a href="https://github.com/your-repo/smartchill/blob/main/README.md"> Documentation </a> <span> · </span> <a href="https://yourpresentationlink.com"> Presentation </a> 
+<h4> <a href="https://github.com/vaibhavi0028/codecortex/blob/main/README.md"> Documentation </a> <span> · </span> <a href="https://www.canva.com/design/DAGR-BxzkrU/TfrvCm9Ie4cj1B1ZYxwghQ/edit?utm_content=DAGR-BxzkrU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> Presentation </a> 
 <br><br>
 </div>
 
@@ -24,12 +24,12 @@ SmartChill is designed to optimize the efficiency of chiller plants used in hote
 ## :space_invader: Technologies Used
 <ul>
 <li><a href="https://www.python.org/">Python</a></li>
+<li><a href="https://pytorch.org/">PyTorch</a></li>
+<li><a href="https://pandas.pydata.org/">Pandas</a></li>
 <li><a href="https://scikit-learn.org/">Scikit-learn</a></li>
-<li><a href="https://flask.palletsprojects.com/">Flask</a></li>
-<li><a href="https://www.django-rest-framework.org/">Django REST Framework</a></li>
 <li><a href="https://www.tensorflow.org/">TensorFlow</a></li>
-<li><a href="https://www.mongodb.com/">MongoDB</a></li>
-<li><a href="https://www.plotly.com/dash/">Dash</a></li>
+<li><a href="https://react.dev/">React JS</a></li>
+<li><a href="https://expressjs.com/">Express JS</a></li>
 </ul>
 <br>
 
@@ -40,13 +40,13 @@ SmartChill is designed to optimize the efficiency of chiller plants used in hote
 Clone the repository to your local machine.
 
 ```bash
-git clone https://github.com/your-repo/smartchill
+git clone https://github.com/vaibhavi0028/codecortex
 ```
 
 Navigate to the project directory and install dependencies.
 
 ```bash
-cd smartchill
+cd codecortex
 pip install -r requirements.txt
 ```
 
@@ -113,7 +113,7 @@ To run the application locally, follow these steps:
 
 Clone the repository:
 ```bash
-git clone https://github.com/your-repo/smartchill.git
+git clone https://github.com/vaibhavi0028/codecortex.git
 cd smartchill
 ```
 

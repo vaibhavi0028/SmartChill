@@ -11,6 +11,7 @@ import Customer from "./components/Customer";
 import ContactUs from "./ContactUs";
 import NewsSection from "./components/News";
 import DeepFake from "./components/DeepFake";
+import Xray from "./components/Xray";
 
 function App() {
   const location = useLocation();
@@ -40,6 +41,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/news" element={<NewsSection />} />
           <Route path="/fault" element={<DeepFake />} />
+          <Route path="/optimize" element={<Xray />} />
         </Route>
         <Route path="/register" element={<Register />} />
       </Routes>

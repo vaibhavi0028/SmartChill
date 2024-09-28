@@ -8,13 +8,13 @@ const cards = [
     {
         id: 1,
         name: 'Pulkit Nandwana',
-        designation: 'Front-end Developer',
+        designation: 'Website Developer',
         photo: founder1
     },
     {
         id: 2,
         name: 'Vaibhavi',
-        designation: 'Front-end Developer',
+        designation: 'Website Developer',
         photo: founder2
     },
     {

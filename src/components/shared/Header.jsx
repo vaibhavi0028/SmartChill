@@ -15,7 +15,7 @@ export default function Header() {
 
 			<div className="flex items-center gap-2">
 			<img src={logo} alt="logo" className="w-16 h-16 "/>
-				<span className="text-[#98DED9] text-2xl">SmartChill</span>
+			<span className="text-[#98DED9] text-3xl font-bold font-[Acme]">SmartChill</span>
 			</div>
 
 			<div className="flex gap-4 ml-auto">

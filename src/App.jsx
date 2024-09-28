@@ -10,6 +10,7 @@ import Orders from "./components/Orders";
 import Customer from "./components/Customer";
 import ContactUs from "./ContactUs";
 import NewsSection from "./components/News";
+import DeepFake from "./components/DeepFake";
 
 function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
           <Route path="/overview" element={<Customer />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/news" element={<NewsSection />} />
+          <Route path="/fault" element={<DeepFake />} />
         </Route>
         <Route path="/register" element={<Register />} />
       </Routes>

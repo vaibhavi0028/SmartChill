@@ -3,7 +3,7 @@
 <h1>SmartChill: Optimized Chiller Load Management for Hotels</h1>
 <p>This repository contains the codebase for SmartChill, an innovative project focused on enhancing energy efficiency in hotel chiller plants. Developed by a dedicated team, we leverage data-driven insights to create an AI-driven solution that optimizes chiller performance. Join us in revolutionizing energy management in the hospitality industry! 🚀🏨</p>
 
-<h4> <a href="https://github.com/vaibhavi0028/codecortex/blob/main/README.md"> Documentation </a> <span> · </span> <a href="https://www.canva.com/design/DAGR-BxzkrU/TfrvCm9Ie4cj1B1ZYxwghQ/edit?utm_content=DAGR-BxzkrU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> Presentation </a> 
+<h4> <a href="https://github.com/vaibhavi0028/SmartChill/blob/main/README.md"> Documentation </a> <span> · </span> <a href="https://www.canva.com/design/DAGR-BxzkrU/TfrvCm9Ie4cj1B1ZYxwghQ/edit?utm_content=DAGR-BxzkrU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> Presentation </a> 
 <br><br>
 </div>
 
